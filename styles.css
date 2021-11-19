@@ -1,6 +1,6 @@
 :root{
     --color-fondo: #F7F7F7;
-    --color-header: #FF7800;
+    --color-header: #009DAE;
 }
 html{
     box-sizing: border-box;
@@ -20,6 +20,16 @@ img{
     max-width: 100%;
     height: auto;
 }
+ul,ol{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #087581;
+}
+h2{
+    color: #009DAE;
+}
 .container{
     width: 100%;
     max-width: 100rem;
@@ -28,17 +38,67 @@ img{
 .sec-p{
     padding: 2rem;
 }
+.titulo-m{
+    margin-bottom: 2rem;
+}
 
 /*Estilos header*/
 .header{
+    position: sticky;
+    top: 0;
     color: #F7F7F7;
     background-color: var(--color-header);
+    box-shadow: .1rem .2rem .5rem rgba(0, 0, 0, 0.5);
+}
+.header__titulo{
+    color:#F7F7F7;
+    font-size: 3.8rem;
+    letter-spacing: .3rem;
 }
 
 /*Estilos main*/
-.descripcion__titulo{
-    margin-bottom: 2rem;
-}
 .descripcion__parrafo{
+    margin-bottom: 1.8rem;
+}
+
+/*Estilos pasiones*/
+.pasiones__item{
+    padding: 1rem 3rem;
+}
+
+/*Estilos tecnologias*/
+.proyectos,
+.tecnologias{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+}
+.proyectos{
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+}
+.tecnologias__img{
+    width: 80%;
+}
+.proyecto{
+    border: .1rem solid #232323;
+}
+.proyecto__info{
+    margin-top: 1rem;
+    padding: 1.5rem;
+}
+.proyecto__titulo{
     margin-bottom: 1rem;
+}
+
+/*Estilos contactp*/
+.contacto__info{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.contacto__img{
+    width: 2.8rem;
+}
+.contacto__link{
+    margin-left: 1rem;
 }
