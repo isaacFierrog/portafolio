@@ -1,0 +1,44 @@
+:root{
+    --color-fondo: #F7F7F7;
+    --color-header: #FF7800;
+}
+html{
+    box-sizing: border-box;
+    font-size: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-size: 1.6rem;
+    background-color: var(--color-fondo);
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.container{
+    width: 100%;
+    max-width: 100rem;
+    margin: 0 auto;
+}
+.sec-p{
+    padding: 2rem;
+}
+
+/*Estilos header*/
+.header{
+    color: #F7F7F7;
+    background-color: var(--color-header);
+}
+
+/*Estilos main*/
+.descripcion__titulo{
+    margin-bottom: 2rem;
+}
+.descripcion__parrafo{
+    margin-bottom: 1rem;
+}
